@@ -1,11 +1,10 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose');
-var express = require('express')
-var cors = require('cors')
-app.use(cors())
-var bodyParser = require('body-parser')
-app.use(bodyParser.json())
+// var express = require('express')
+// var cors = require('cors')
+// app.use(cors())
+
 const PORT = 5050
 const CONNECTION_STRING = "mongodb+srv://laman:laman123@djoz.unjz8zh.mongodb.net/"
 const PASSWORD="laman123"
@@ -16,3 +15,4 @@ mongoose.connect(CONNECTION_STRING)
   app.listen(PORT, function () {
     console.log(`CORS-enabled web server listening on port ${PORT}`)
   })
+  module.exports = app;

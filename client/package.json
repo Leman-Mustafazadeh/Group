@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "front",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,14 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
-    "node-sass": "^9.0.0",
+    "context": "^3.0.29",
+    "formik": "^2.4.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.23.1",
-    "sass": "^1.77.4"
+    "styled-components": "^6.1.11",
+    "toastify": "^2.0.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -27,6 +36,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.77.2",
     "vite": "^5.2.0"
   }
 }

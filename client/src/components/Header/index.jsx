@@ -14,7 +14,6 @@ const Header = () => {
                 <li><a href="">pages </a></li>
                 <li><a href="">blog </a></li>
                 <li><a href="">Contact </a></li>
-
             </ul>
 
             <div className={styles.head_title}>

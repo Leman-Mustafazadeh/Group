@@ -1,6 +1,11 @@
-import Event from "../components/Event";
-import Home from "../pages/Home";
-import TravelRouter from "../pages/TravelRouter";
+
+import AdminRouter from "../pages/Admin/AdminRouter";
+import AdminHome from "../pages/Admin/Home";
+import Home from "../pages/User/Home";
+import Login from "../pages/User/Login";
+import Register from "../pages/User/Register";
+import TravelRouter from "../pages/User/TravelRouter";
+
 
 export const ROUTES=[{
     path:"/",
@@ -10,9 +15,32 @@ export const ROUTES=[{
         element:<Home/>
     },
     {
-        path:"event",
-        element:<Event/>
+        path:"/login",
+        element:<Login/>
+    },
+    {
+        path:"/register",
+        element:<Register/>
     }
 
 ]
-}]
+},
+{
+    path:"/admin",
+    element:<AdminRouter/>,
+    children:[{
+        index:true,
+        element:<AdminHome/>
+    },
+    // {
+    //     path:"/login",
+    //     element:<Login/>
+    // },
+    // {
+    //     path:"/register",
+    //     element:<Register/>
+    // }
+
+]
+}
+]

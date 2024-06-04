@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./index.module.scss"
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className="container">
         <div className={styles.head}>
             <img src="https://preview.colorlib.com/theme/travelo/img/logo.png.webp" alt="" />

@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from "./index.module.scss"
-const Event = () => {
+
+const Hero = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      hero
+    </>
   )
 }
 
-export default Event
+export default Hero

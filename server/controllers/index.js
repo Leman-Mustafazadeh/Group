@@ -1,13 +1,11 @@
-const event_controllers= require("./event.controller")
-const human_controllers = require("./human.controller")
-const place_controllers = require("./place.controller")
-const popular_controllers = require("./popular.controller")
+const blog_controller = require('./blog.controller');
+const user_controller = require('./user.controller');
+const tag_controller = require('./tag.controller');
 
 const controller = {
-    event:event_controllers,
-    popular:popular_controllers,
-    place:place_controllers,
-    human:human_controllers
-}
+    blog: blog_controller,
+    user: user_controller,
+    tag: tag_controller
+};
 
-module.exports= controller
+module.exports = controller;
